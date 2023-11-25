@@ -6,7 +6,7 @@
 * web server
 * spi controller
 * web client
-* connect to ATREB215-XPRO
+* connect to SPI device
 * read / write registers
 
 ### Development
@@ -43,21 +43,6 @@ idf.py -p /dev/ttyACM0 flash # build & flash
 
 idf.py -p /dev/ttyACM0 flash monitor # build & flash & monitor -> exit Ctrl+]
 ```
-
-Atmel SPI 25MHz
-
-| ESP32-C6  | J100  | AT86RF215     |
-|-----------|-------|---------------|
-|           | 5     | -> LEDpwr OD Yellow |
-|           | 6     | -> LEDtxrx OD Green |
-|           | 7     | -> RSTn (13)  |
-|           | 9     | <- IRQ  (40)  |
-|           | 15    | -> SELN (42)  |
-|           | 16    | -> MOSI (43)  |
-|           | 17    | <- MISO (44)  |
-|           | 18    | -> SCLK (41)  |
-|           | 19    | GND           |
-|           | 20    | 3v3           |
 
 https://github.com/wuxx/nanoESP32-C6/blob/master/README_en.md
 
